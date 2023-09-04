@@ -1,0 +1,4 @@
+ $ckInvData = $this->Constant_model->getDataOneColumn('inventory', 'product_code', $pcode);
+													$qty = $ckInvData[0]->qty;
+?>
+													<span id="proname"><?php echo $name; ?> <br/>[<?php echo $qty; ?>]</span>
